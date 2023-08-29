@@ -27,7 +27,7 @@ public class ExceptionHandlerController {
 
         var errorResponse = new ErrorResponse(
                 HttpStatus.NOT_ACCEPTABLE.value(),
-                "Wrong headers");
+                "Wrong Accept header");
 
         HttpHeaders httpHeaders= new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
